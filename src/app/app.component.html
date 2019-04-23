@@ -1,5 +1,3 @@
 <ul>
-  <li>{{ users[0] }}</li>
-  <li>{{ users[1] }}</li>
-  <li>{{ users[2] }}</li>
+  <li *ngFor ="let user of users">{{ user }}</li>
 </ul>
