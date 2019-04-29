@@ -1,3 +1,7 @@
+    <form (submit)="addUser(newUser)">
+        <input type="text" #newUser>
+        <button>Send User</button>
+    </form>
 <ul>
     <li *ngFor="let user of users">
         {{ user }} <button (click)="deleteUser(user)">
