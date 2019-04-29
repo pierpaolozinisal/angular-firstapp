@@ -7,22 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-    name: string = "Ryan Ray";
-    age: number;
-    address: {
-      street: string;
-      city: string;
-      };
-    hobbies: string[];
-
-    constructor(){
+  users: string[] = ['Ryan','Joe', 'Cameron'];
  
-    this.age=28;
-    this.address = {
-      street: 'Baker Street',
-      city: 'London'
-    };
-    this.hobbies=['swimming','read','write'];
+  sayHello(){
 
-    };
+    alert("Hello!");
+  };
+  deleteUser(user){
+    for(let i=0;i < this.users.length;i++){
+      if(user=== this.users[i]){
+        this.users.splice(i,1);
+      }
+    }
+  }
+    
 };
