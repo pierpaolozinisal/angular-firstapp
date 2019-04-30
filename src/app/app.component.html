@@ -9,3 +9,21 @@
         </button>
     </li>
 </ul>
+<div>
+    <form>
+        <input type="text" name='name' [(ngModel)]="name">
+        <input type="text" name='age' [(ngModel)]="age">
+    </form>
+
+    name : {{ name }}<br>
+    age: {{ age}}
+</div>
+<hr>
+<div *ngFor="let post of posts">
+    <h3>{{ post.title }}</h3>
+    <p>
+        {{ post.body}}
+    </p>
+
+</div>
+
